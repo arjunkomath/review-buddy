@@ -1,0 +1,35 @@
+{
+  "name": "review-buddy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An AI to review PRs",
+  "author": "Arjun Komath",
+  "license": "ISC",
+  "homepage": "https://github.com/arjunkomath/review-buddy",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "probot run ./lib/index.js",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "openai": "^4.56.0",
+    "probot": "^13.0.1",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nock": "^14.0.0-beta.5",
+    "smee-client": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "type": "module"
+}
